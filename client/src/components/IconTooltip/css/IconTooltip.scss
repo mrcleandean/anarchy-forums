@@ -1,0 +1,16 @@
+#IconTooltip {
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+    line-height: 0px;
+    border-radius: 17px;
+    opacity: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.3s, box-shadow 0.3s;
+    pointer-events: none;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4);
+}

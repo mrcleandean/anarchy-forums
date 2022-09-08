@@ -1,0 +1,20 @@
+.UnderHeader {
+  width: 100%;
+  display: flex;
+  margin-top: 110px;
+  justify-content: center;
+}
+.UnderHeader h3 {
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.UnderHeader h3 .under-header-letters {
+  margin: 1.6px;
+  opacity: 0;
+  font-size: 21px;
+  font-family: monospace;
+  color: black;
+  transition: opacity 0.3s;
+}/*# sourceMappingURL=UnderHeader.css.map */

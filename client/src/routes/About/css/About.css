@@ -1,0 +1,158 @@
+.About {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.About .Header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+.About .Header .inner-header {
+  display: flex;
+  min-width: 300px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.About .Header .inner-header .header-left {
+  width: 45%;
+}
+.About .Header .inner-header .header-left h1 {
+  display: flex;
+  justify-content: center;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.About .Header .inner-header .header-left h1 .header-title-letter-a {
+  cursor: default;
+  display: block;
+  color: black;
+  color: black;
+  margin: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: font-size 0.2s;
+}
+@media only screen and (max-width: 420px) {
+  .About .Header .inner-header .header-left h1 .header-title-letter-a {
+    font-size: 20px;
+  }
+}
+.About .Header .inner-header .header-left h1 .header-title-letter-a:hover {
+  font-size: 40px;
+}
+@media only screen and (max-width: 420px) {
+  .About .Header .inner-header .header-left h1 .header-title-letter-a:hover {
+    font-size: 25px;
+  }
+}
+.About .Header .inner-header .header-right {
+  width: 55%;
+}
+.About .Header .inner-header .header-right ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.About .Header .inner-header .header-right ul li {
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 3px;
+}
+.About .Header .inner-header .header-right ul li .link {
+  color: black;
+  text-decoration: none;
+}
+.About .about-wrapper {
+  margin: 50px;
+  margin-top: 120px;
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 420px) {
+  .About .about-wrapper {
+    margin: 15px;
+    margin-top: 120px;
+  }
+}
+.About .about-wrapper .section-1 {
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+  padding: 8px;
+}
+@media only screen and (max-width: 420px) {
+  .About .about-wrapper .section-1 {
+    margin: 15px;
+  }
+}
+.About .about-wrapper .section-1 h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.About .about-wrapper .section-1 p {
+  margin-top: 10px;
+}
+.About .about-wrapper .section-2 {
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+  padding: 8px;
+}
+@media only screen and (max-width: 420px) {
+  .About .about-wrapper .section-2 {
+    margin: 15px;
+  }
+}
+.About .about-wrapper .section-2 h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.About .about-wrapper .section-2 p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: black;
+}
+.About .about-wrapper .section-2 p .icon {
+  margin-right: 5px;
+}
+.About .about-wrapper .section-2 p .yellow {
+  color: rgb(255, 196, 0);
+}
+.About .about-wrapper .section-2 p .red {
+  color: red;
+}
+.About .about-wrapper .section-2 p .pink {
+  color: pink;
+}
+.About .about-wrapper .section-2 p .green {
+  color: green;
+}
+.About .about-wrapper .section-2 p .blue {
+  color: rgb(0, 68, 255);
+}/*# sourceMappingURL=About.css.map */

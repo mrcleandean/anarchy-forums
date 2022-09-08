@@ -1,0 +1,71 @@
+.UserTools {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s;
+  margin: auto;
+  max-width: 1200px;
+  pointer-events: none;
+}
+.UserTools .add-post-wrapper {
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+@media only screen and (max-width: 546px) {
+  .UserTools .add-post-wrapper {
+    margin-left: 10px;
+    font-size: 8px;
+  }
+}
+.UserTools .add-post-wrapper h1:first-of-type {
+  margin: 8px 8px 8px 20px;
+}
+.UserTools .add-post-wrapper h1:last-of-type {
+  margin: 8px 20px 8px 8px;
+}
+.UserTools .add-post-wrapper:hover {
+  box-shadow: 0 0 1.3rem 0 rgba(0, 0, 0, 0.6);
+  background-color: whitesmoke;
+}
+.UserTools .search-wrapper {
+  margin: 10px 50px 0px 50px;
+  min-width: 100px;
+  max-width: 100vw;
+  width: 100%;
+  border-radius: 100px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 546px) {
+  .UserTools .search-wrapper {
+    margin: 10px 15px 0px 20px;
+  }
+}
+.UserTools .search-wrapper input {
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  padding: 0;
+  height: 100%;
+  width: calc(100% - 30px);
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 455px) {
+  .UserTools .search-wrapper input {
+    font-size: 15px;
+  }
+}
+.UserTools .search-wrapper input:active {
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=UserTools.css.map */

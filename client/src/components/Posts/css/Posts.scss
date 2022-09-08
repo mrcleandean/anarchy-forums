@@ -1,0 +1,180 @@
+.Posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .no-posts {
+        transition: opacity 0.3s, box-shadow 0.3s, background-color 0.3s;
+        margin: 20px 50px 0 50px;
+        display: flex;
+        border-radius: 16px;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4);
+        opacity: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        .title {
+            margin: 10px 17px 10px 17px;
+            color: black;
+            width: 100%;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            word-break: break-word;
+            hyphens: auto;
+        }
+    }
+    .post:hover {
+        box-shadow: 0 0 1.3rem 0 rgba(0, 0, 0, .60);
+        background-color: whitesmoke;
+    }
+
+    .post {
+        opacity: 0;
+        transition: opacity 1s, box-shadow 0.3s, background-color 0.3s;
+        margin: 20px 0 0 0;
+        display: flex;
+        border-radius: 16px;
+        max-width: 1050px;
+        width: calc(100% - 50px);
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4);
+        font-family: Arial, Helvetica, sans-serif;
+
+        @media only screen and (max-width: 735px) {
+            margin: 20px 20px 20px 20px;
+        }
+
+        .reactions-wrapper {
+            background-color: rgba(88, 82, 82, 0.099);
+            border-bottom-left-radius: 16px;
+            border-top-left-radius: 16px;
+
+            .reactions {
+                border-bottom-left-radius: 16px;
+                border-top-left-radius: 16px;
+                height: 220px;
+                width: 40px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+
+                .reaction {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    color: black;
+
+                    .icon {
+                        margin-left: -5px;
+                        transform: scale(0.9);
+                        cursor: pointer;
+                    }
+
+                    .yellow {
+                        color: rgb(255, 196, 0);
+                    }
+
+                    .red {
+                        color: red;
+                    }
+
+                    .pink {
+                        color: pink;
+                    }
+
+                    .green {
+                        color: green;
+                    }
+
+                    .blue {
+                        color: rgb(0, 68, 255);
+                    }
+                }
+            }
+        }
+
+        .media {
+            margin-left: 20px;
+            width: 100%;
+
+            .flair-wrapper:hover {
+                box-shadow: 0 0 1.3rem 0 rgba(0, 0, 0, .60);
+            }
+
+            .flair-wrapper {
+                cursor: default;
+                margin: 10px 0px 5px 2px;
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4);
+                border-radius: 10px;
+                width: fit-content;
+
+                .flair-text {
+                    padding: 3.5px;
+                    margin: 0;
+                    color: black;
+
+                }
+            }
+
+            .title {
+                margin: 10px 17px 5px 5px;
+                color: black;
+                width: auto;
+                word-wrap: break-word;
+                white-space: pre-wrap;
+                word-break: break-word;
+                hyphens: auto;
+            }
+
+            .content {
+                padding: 4px 8px 4px 8px;
+                margin: 10px 15px 5px 0px;
+                overflow: auto;
+                width: auto;
+                min-height: 110px;
+                max-height: 400px;
+                background-color: rgba(88, 82, 82, 0.099);
+                border-radius: 10px;
+                word-wrap: break-word;
+                white-space: pre-wrap;
+                word-break: break-word;
+                hyphens: auto;
+            }
+
+            .date {
+                margin: 7px 0px 7px 5px;
+                color: black;
+            }
+        }
+    }
+
+    .load-more-wrapper {
+        height: 70px;
+
+        .load-more-button {
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 10px;
+            color: black;
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4);
+            width: fit-content;
+            margin: auto;
+            border-radius: 15px;
+            opacity: 0;
+            transition: box-shadow 0.3s, background-color 0.3s, opacity 0.3s;
+
+            h1 {
+                padding: 5px;
+                padding-left: 6.5px;
+                padding-right: 6.5px;
+            }
+        }
+
+        .load-more-button:hover {
+            box-shadow: 0 0 1.1rem 0 rgba(0, 0, 0, .60);
+            background-color: whitesmoke;
+        }
+    }
+}

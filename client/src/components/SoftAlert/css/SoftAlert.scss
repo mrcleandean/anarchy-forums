@@ -1,0 +1,32 @@
+.SoftAlert {
+    position: fixed;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 0;
+    width: fit-content;
+    padding: 5px;
+    padding-top: 0px;
+    transition: bottom 0.35s;
+    background-color: white;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    .soft-alert-p {
+        font-family: Arial, Helvetica, sans-serif;
+        @media only screen and (max-width: 420px) {
+            font-size: 13.5px;
+        }
+    }
+    .timer-bar {
+        width: calc(100% + 10px);
+        height: 5px;
+        background-color: black;
+        margin-bottom: -5px;
+        margin-left: -5px;
+        transition: width 4.5s;
+        transition-timing-function: ease-in;
+    }
+}
